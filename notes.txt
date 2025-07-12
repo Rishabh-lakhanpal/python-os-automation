@@ -1,0 +1,73 @@
+📘 Notes: Python File & OS Automation (Google IT Automation with Python - Module 2)
+
+--------------------------------------------------------
+1. File Handling in Python
+--------------------------------------------------------
+- open(filename, mode) → modes: 'r', 'w', 'a'
+- Best practice: use `with open(...) as file:`
+- file.read(), file.readline(), file.readlines()
+- file.write(), file.writelines()
+- file.close()
+
+Example:
+with open("example.txt") as f:
+    for line in f:
+        print(line.strip())
+
+--------------------------------------------------------
+2. The `os` Module
+--------------------------------------------------------
+- os.getcwd()          # Current directory
+- os.chdir(path)       # Change directory
+- os.listdir()         # List files
+- os.remove(), os.rename(), os.path.exists(), os.path.getsize()
+- os.path.join(), os.path.abspath()
+
+--------------------------------------------------------
+3. Working with Directories
+--------------------------------------------------------
+- os.mkdir("folder")
+- os.rmdir("folder")
+- Use `os.path.isdir()` and `os.path.isfile()` for checks
+
+--------------------------------------------------------
+4. CSV Files
+--------------------------------------------------------
+- import csv
+- Reading:
+    csv.reader(file)
+    csv.DictReader(file)
+- Writing:
+    csv.writer(file)
+    writer.writerow(), writer.writerows()
+
+--------------------------------------------------------
+5. Regex (Python `re` module)
+--------------------------------------------------------
+- import re
+- re.search(), re.findall(), re.sub()
+- Character classes: [a-z], \w, \d, \s, .
+- Quantifiers: *, +, ?, {min,max}
+- Anchors: ^ (start), $ (end)
+- Grouping: (), Backreference: \1
+
+Example:
+name = "Lovelace, Ada"
+match = re.search(r"^(\w+),\s+(\w+)$", name)
+→ match.groups() = ('Lovelace', 'Ada')
+
+--------------------------------------------------------
+6. Bash Commands Used
+--------------------------------------------------------
+- cat filename
+- grep pattern filename
+- chmod +x script.py
+- ./script.py to run directly
+- nano filename for editing
+
+--------------------------------------------------------
+🧠 Takeaways
+--------------------------------------------------------
+- Always use `with open()` for safety
+- Use `os.path` methods for cross-platform compatibility
+- Regex is powerful for parsing logs/text, especially in DevOps/QA

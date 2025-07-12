@@ -1,0 +1,10 @@
+import csv
+
+hosts = [
+    ["workstation.local", "193.235.2.23"],
+    ["webserver.cloud", "13.3.3.3"]
+]
+
+with open("host.csv", "w") as hosts_csv:
+    writer = csv.writer(hosts_csv)
+    writer.writerows(hosts)

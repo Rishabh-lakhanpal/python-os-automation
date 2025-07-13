@@ -23,6 +23,21 @@ This folder contains practice scripts and exercises from **Module 2** of the Goo
 | `parse_csv.py`      | Parses CSV file from command-line argument |
 | `word.py`           | Used for regex practice with `grep` |
 
+
+## 📂 cli_scripts
+
+This folder contains command-line Python scripts from Module 2 practice, focusing on automation, environment variables, subprocess, and CLI tools.
+
+| Script | Description |
+|--------|-------------|
+| `hello.py` | Simple Hello World CLI with input |
+| `seconds.py` | Converts hours, minutes, seconds into total seconds |
+| `streams.py` | Demonstrates STDIN, STDOUT, STDERR |
+| `variables.py` | Prints environment variables (HOME, SHELL, etc.) |
+| `parameters.py` | Demonstrates `sys.argv` for passing CLI arguments |
+| `check_cron.py` | Basic cron job format validator |
+| `my_app.py` | Demonstrates custom `PATH` via `subprocess` |
+
 ---
 
 ## 📁 Sample Data Files

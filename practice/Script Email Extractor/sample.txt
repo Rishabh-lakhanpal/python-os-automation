@@ -1,0 +1,3 @@
+Hello , contact me at rishabhlakhanpal8@gmail.com or support@company.org.
+Also, reach out to me at hr@tech.io and marketing@startup.co.in for queries.
+Invalid: user@@example..com

@@ -49,6 +49,22 @@ This folder contains command-line Python scripts from Module 2 practice, focusin
 
 ---
 
+### 📁 `practice/`
+
+#### 🔸 `Script Organizer Script/`
+- `organize_files.py`: Automatically moves files into folders based on their extensions (`.txt`, `.pdf`, etc.)
+
+#### 🔸 `Script Email Extractor/`
+- `extract_emails.py`: Extracts all valid email addresses from a text file using regex
+- `sample.txt`: Sample input file for the script
+
+#### 🔸 `MiniScripts/`
+- `CountWordInFile.py`: Counts total words in a text file
+- `UppercaseFileContent.py`: Converts contents of a file to uppercase
+- `upper_sample.txt`: Sample file for the above script
+
+---
+
 ## 🧪 Practice Notes
 
 - `grep_regex_cheat_sheet.md`: Regex syntax and Bash usage examples
